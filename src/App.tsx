@@ -1,40 +1,17 @@
 
 import './App.css'
 
-
-// With props object destructuring 
-
-
-// method : 1
-
-function User(props) {
-  const { name, email, age } = props
+function Developer({ name }) {
   return (
     <>
-      <h2>{name}</h2>
-      <p>{email}</p>
-      <p>{age}</p>
 
+      <ul>
+        <li>{name}</li>
+      </ul>
     </>
+
   )
 }
-
-// method : 2
-
-function User({ name, email, age }) {
-
-    return (
-    <>
-      <h2>{name}</h2>
-      <p>{email}</p>
-      <p>{age}</p>
-
-    </>
-    )
-}
-
-
-
 
 
 
@@ -42,8 +19,9 @@ function App() {
 
   return (
     <>
-
-      <User name="Md Shakil Hossain" email="shakiltest@gmail.com" age={20} />
+    <h2>Welcome to the Developer Zone!</h2>
+      <Developer  name="Md Shakil Hossain" /> 
+      <Developer name={'Shakib Hassan'} />
 
     </>
   )
