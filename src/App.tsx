@@ -1,46 +1,35 @@
 
 import './App.css'
+import StudentCard from './compponents/StudentCard'
 
-
-function FruitList({items}){
-  const {} = items
-
-
-  return (
-    <>
-    
-    {
-      items.skillList.map((items, index)=>(
-        <li key={index}>{items}</li>
-      ))
-    }
-    
-    </>
-  )
-}
 
 
 
 function App() {
 
+  const studentData = {
+    info: {
+      name: "Md Shakil Hossain",
+      age: 20,
+      courses: ["React", "JavaScript", "Tailwind"]
+
+    }
+  }
+
+
 
   return (
+
     <>
-      <FruitList  items={{
-  skillList : ["Javascript", "Typescript", "React", "NextJS", "MongoDB"]
-  
-}} />
+      <StudentCard studentInfo={studentData} />
 
     </>
+
   )
+
+
 }
 
-item: {
-  {
-  skillList : ["Javascript", "Typescript", "React", "NextJS", "MongoDB"]
-  
-}
-}
 
 
 
