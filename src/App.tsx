@@ -1,10 +1,13 @@
 
 import './App.css'
 
-  function User({name}){
+  function User({userInfo : {name, email, age}}){
+    // const {name, age, email} = userinfo;
     return(
       <>
       <h2>{name}</h2>
+      <h2>{email}</h2>
+      <h2>{age}</h2>
       </>
     )
   }
@@ -12,15 +15,16 @@ import './App.css'
 
 
 function App() {
-const username= "Md Shakil Hossain"
 
 
   return (
     <>
  
-   <User  name={'username'}/>
-   <User  name="username"/>
-   <User  name={username}/>
+     <User userInfo={{
+      name : "Md Shakil",
+      age : 20,
+      email : "shakiltest@gmail.com"
+     }}/>
 
     </>
   )
