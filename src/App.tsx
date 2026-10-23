@@ -2,11 +2,13 @@
 import './App.css'
 
 
-// using  props
-function Greeting(props) {
+// Without props object destructuring 
+function User(props) {
   return (
     <>
-    <h2>Hello, {props.name}!</h2>
+    <h2>{props.name}</h2>
+    <p>{props.email}</p>
+    <p>{props.age}</p>
     
     </>
   )
@@ -21,8 +23,7 @@ function App() {
   return (
     <>
 
- <Greeting  name="Md Shakil Hossain"/>
- <Greeting  name="Md Shakib Hossain"/>
+ <User  name="Md Shakil Hossain" email="shakiltest@gmail.com" age={20}/>
 
     </>
   )
