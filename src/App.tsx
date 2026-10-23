@@ -1,30 +1,26 @@
 
 import './App.css'
 
-function Developer({ name }) {
-  return (
-    <>
-
-      <ul>
-        <li>{name}</li>
-      </ul>
-    </>
-
-  )
-}
+  function User({name}){
+    return(
+      <>
+      <h2>{name}</h2>
+      </>
+    )
+  }
 
 
 
 function App() {
+const username= "Md Shakil Hossain"
 
-  const name = "Md Shakil Hossain";
-  const age = 20
 
   return (
     <>
-    <h2>Welcome to the Developer Zone!</h2>
-      <Developer  name={name}  /> 
-
+ 
+   <User  name={'username'}/>
+   <User  name="username"/>
+   <User  name={username}/>
 
     </>
   )
