@@ -2,22 +2,20 @@
 import './App.css'
 
 
-function FruitList({ items }) {
+function FruitList({items}){
+  const {} = items
 
 
   return (
     <>
-
-      {
-        items.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))
-      }
-
-
-
+    
+    {
+      items.skillList.map((items, index)=>(
+        <li key={index}>{items}</li>
+      ))
+    }
+    
     </>
-
   )
 }
 
@@ -28,11 +26,23 @@ function App() {
 
   return (
     <>
-      <FruitList items={["Apple", "Banana", "Cherry ", "Quince"]} />
+      <FruitList  items={{
+  skillList : ["Javascript", "Typescript", "React", "NextJS", "MongoDB"]
+  
+}} />
 
     </>
   )
 }
+
+item: {
+  {
+  skillList : ["Javascript", "Typescript", "React", "NextJS", "MongoDB"]
+  
+}
+}
+
+
 
 
 
