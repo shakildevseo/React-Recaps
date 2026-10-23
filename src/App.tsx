@@ -2,19 +2,11 @@
 import './App.css'
 
 
-// without props
-function RohimGreeting() {
+// using  props
+function Greeting(props) {
   return (
     <>
-    <h2>Hello, Rohim!</h2>
-    
-    </>
-  )
-}
-function KarimGreeting() {
-  return (
-    <>
-    <h2>Hello, Karim!</h2>
+    <h2>Hello, {props.name}!</h2>
     
     </>
   )
@@ -28,9 +20,9 @@ function App() {
 
   return (
     <>
-    <RohimGreeting />
-    <KarimGreeting />
-  
+
+ <Greeting  name="Md Shakil Hossain"/>
+ <Greeting  name="Md Shakib Hossain"/>
 
     </>
   )
