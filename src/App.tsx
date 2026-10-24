@@ -1,37 +1,28 @@
 
 import './App.css'
-import StudentCard from './compponents/StudentCard'
+import ButtonComponent from './compponents/ButtonComponent'
 
 
-interface StudentInfoTypeProps {
- 
-    info : {
-      name : string, 
-      age : number,
-      courses : string[]
-    }
- 
-}
 
+
+
+
+
+
+  function handleClick() : void{
+    console.log("Clicked")
+  }
 
 
 function App() {
-
-  const studentData : StudentInfoTypeProps = {
-    info: {
-      name: "Md Shakil Hossain",
-      age: 20,
-      courses: ["React", "JavaScript", "Tailwind"]
-
-    }
-  }
 
 
 
   return (
 
     <>
-      <StudentCard studentInfo={studentData} />
+
+    <ButtonComponent onClick={handleClick}  />
 
     </>
 
