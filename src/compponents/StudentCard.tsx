@@ -1,6 +1,18 @@
 
 
-function StudentCard({ studentInfo: { info: { name, age, courses } } }) {
+interface StudentCardProps {
+  studentInfo :{
+    info : {
+      name : string,
+      age :  number,
+      courses : string[]
+    }
+  }
+}
+
+
+
+function StudentCard({ studentInfo: { info: { name, age, courses } } } : StudentCardProps) {
   return (
     <>
       <h2>{name}</h2>

@@ -3,11 +3,21 @@ import './App.css'
 import StudentCard from './compponents/StudentCard'
 
 
+interface StudentInfoTypeProps {
+ 
+    info : {
+      name : string, 
+      age : number,
+      courses : string[]
+    }
+ 
+}
+
 
 
 function App() {
 
-  const studentData = {
+  const studentData : StudentInfoTypeProps = {
     info: {
       name: "Md Shakil Hossain",
       age: 20,
