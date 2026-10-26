@@ -1,27 +1,11 @@
 
 import './App.css'
-import Button from './compponents/Button';
-import Counter from './compponents/Counter'
-import Greeting from './compponents/Greeting';
+import Card from './compponents/Card'
 
 
 
 function App() {
 
-  let count = 0;
-
-
-  const handleIncrementCount = ()=>{
-    console.log(count)
-       return count + 1;
-  }
-
-
-
-
-   const handleSave = ()=>{
-    alert("Button was clicked! Data saved.")
-   }
 
 
 
@@ -29,11 +13,11 @@ function App() {
 
     <>
   
-  <Counter count= {count} increment={handleIncrementCount}/>
-  <Greeting name="Rahim'" />
-  <Greeting name="Karim'" />
-  <Button text="Save Changes" onClick={handleSave}/>
+    <Card>
+     <h2>Welcome</h2>
+     <p>Learn React step by step.</p>
 
+    </Card>
 
     </>
 
